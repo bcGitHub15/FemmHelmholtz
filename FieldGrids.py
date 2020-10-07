@@ -235,7 +235,7 @@ class ScalarField(Grid):
         return self.PlotAsWireFrame(axpass)
 
     def Cplot(self, npass=10, axpass=None):
-        return self.ContourPlot(self.u, npass)
+        return self.ContourPlot(self.u, npass, axes=axpass)
 
     def Iplot(self, figpass=None):
         return self.PlotAsImage(figpass)
